@@ -21,11 +21,7 @@ document.getElementById('login-button').addEventListener('click', function(event
             // Store the token in a cookie
             document.cookie = `token=${data.token}`;
             window.location.href = 'profile.html';
-        } else {
-            console.error('Token not found in the response');
-        }
+        } 
     })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+   
 });
